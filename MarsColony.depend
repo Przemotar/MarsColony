@@ -402,3 +402,25 @@
 1428839001 source:c:\users\student\desktop\najnopwskiedzialanaperwno\src\mapobject.cpp
 	"MapObject.h"
 
+1428839001 c:\users\student\desktop\najnopwskiedzialanaperwno\include\enemy.h
+	"MapObject.h"
+
+1428839001 c:\users\student\desktop\najnopwskiedzialanaperwno\include\mapobject.h
+	<SFML/Graphics.hpp>
+
+1428839001 c:\users\student\desktop\najnopwskiedzialanaperwno\include\enemymanager.h
+	<vector>
+	"Enemy.h"
+
+1428839245 source:c:\users\student\desktop\najnopwskiedzialanaperwno\src\building.cpp
+	"Building.h"
+
+1428839232 c:\users\student\desktop\najnopwskiedzialanaperwno\include\building.h
+	"MapObject.h"
+
+1428839295 source:c:\users\student\desktop\najnopwskiedzialanaperwno\src\tower.cpp
+	"Tower.h"
+
+1428839282 c:\users\student\desktop\najnopwskiedzialanaperwno\include\tower.h
+	"Building.h"
+

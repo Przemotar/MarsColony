@@ -386,3 +386,19 @@
 1428835036 source:c:\users\student\desktop\compo\marscolony\repo\src\mapobject.cpp
 	"MapObject.h"
 
+1428839001 source:c:\users\student\desktop\najnopwskiedzialanaperwno\main.cpp
+	<iostream>
+	<SFML/Graphics.hpp>
+	"Enemy.h"
+
+1428839001 source:c:\users\student\desktop\najnopwskiedzialanaperwno\src\enemy.cpp
+	"Enemy.h"
+	<iostream>
+
+1428839001 source:c:\users\student\desktop\najnopwskiedzialanaperwno\src\enemymanager.cpp
+	"EnemyManager.h"
+	<iostream>
+
+1428839001 source:c:\users\student\desktop\najnopwskiedzialanaperwno\src\mapobject.cpp
+	"MapObject.h"
+

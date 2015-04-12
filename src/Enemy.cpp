@@ -6,14 +6,14 @@ Enemy::Enemy()
     //ctor
 }
 
-Enemy::Enemy(sf::Texture texture)
+Enemy::Enemy(sf::Texture& texture)
 {
-    positionX = 200;//sf::Window::getSize().x / 2;
-    positionY = 200;//sf::Window::getSize().x / 2;
-    //SetSprite(texture);
-    sprite.setTexture(texture);
+
+    positionX = 800;//sf::Window::getSize().x / 2;
+    positionY = rand()%400 + 100;//sf::Window::getSize().x / 2;
+    SetSprite(texture);
     health = 100;
-    movementSpeed = 1.0f;
+    movementSpeed = 0.1f;
     damage = 10;
     level = 1;
     sprite.setPosition(positionX, positionY);
@@ -46,5 +46,5 @@ void Enemy::Die()
 
 void Enemy::Move()
 {
-    //TODO
+    SetObjectPosition(positionX-movementSpeed, positionY);
 }

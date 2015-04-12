@@ -10,14 +10,24 @@ MapObject::~MapObject()
     //dtor
 }
 
-void MapObject::SetSprite(sf::Texture newTexture)
+void MapObject::SetSprite(sf::Texture& newTexture)
 {
-    //texture = newTexture;
-    texture.loadFromFile("MarsWarm.jpg");
-    sprite.setTexture(texture);
+    sprite.setTexture(newTexture);
 }
 
 sf::Sprite MapObject::GetSprite()
 {
     return sprite;
+}
+
+void MapObject::DrawObject(sf::RenderWindow& windowToDraw)
+{
+    windowToDraw.draw(sprite);
+}
+
+void MapObject::SetObjectPosition(float x, float y)
+{
+    positionX = x;
+    positionY = y;
+    sprite.setPosition(x,y);
 }

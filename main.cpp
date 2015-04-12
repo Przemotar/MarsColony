@@ -2,17 +2,28 @@
 #include <SFML/Graphics.hpp>
 #include "Enemy.h"
 #include "EnemyManager.h"
+#include "GameManager.h"
+#include "MapManager.h"
 
 int main()
 {
     sf::RenderWindow window(sf::VideoMode(800, 600), "SFML works!");
     EnemyManager enemyManager;
+    GameManager gameManager;
+    MapManager mapManager;
+
     enemyManager.Init();
+    gameManager.Init();
+    mapManager.Init();
+
 
     int playerHp = 100;
 
     sf::Texture texture;
+
     texture.loadFromFile("MarsWarm.jpg");
+
+
 
     bool moveRight;
 
@@ -26,16 +37,17 @@ int main()
         }
 
         enemyManager.Update();
+        gameManager.Update();
 
         if (enemyManager.isEnemyAtBase())
         {
-            playerHp -= enemyManager.GetEnemyAtBase().DealDamageAmount();
-            std::cout<<"Player HP is: "<<playerHp<<std::endl;
+            gameManager.DealDamage(enemyManager.GetEnemyAtBase().DealDamageAmount());
             enemyManager.ClearEnemiesAtBase();
         }
 
         window.clear();
 
+        mapManager.DrawMap(window);
         enemyManager.DrawEnemies(window);
 
         window.display();

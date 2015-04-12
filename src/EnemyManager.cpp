@@ -15,7 +15,12 @@ EnemyManager::~EnemyManager()
 
 void EnemyManager::Init()
 {
-
+    enemyPaths.push_back(50);
+    enemyPaths.push_back(100);
+    enemyPaths.push_back(150);
+    enemyPaths.push_back(200);
+    enemyPaths.push_back(250);
+    enemyPaths.push_back(300);
 }
 
 void EnemyManager::Update()
@@ -34,7 +39,9 @@ void EnemyManager::Update()
 
 void EnemyManager::Spawn()
 {
+    int targetLocation = rand()%6;
     Enemy newEnemy(Enemy1Texture);
+    newEnemy.SetObjectPosition(newEnemy.positionX, enemyPaths[targetLocation]);
     enemies.push_back(newEnemy);
 }
 
@@ -60,13 +67,15 @@ bool EnemyManager::isEnemyAtBase()
 
 void EnemyManager::ClearEnemiesAtBase()
 {
+    int elementToDelete;
     for (int i=0; i<enemies.size(); i++)
     {
         if (enemies[i].reachedBase)
         {
-
+            elementToDelete = i;
         }
     }
+    enemies.erase(enemies.begin()+elementToDelete);
 }
 
 Enemy& EnemyManager::GetEnemyAtBase()

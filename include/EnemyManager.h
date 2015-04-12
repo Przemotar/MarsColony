@@ -7,6 +7,7 @@
 class EnemyManager
 {
     public:
+        std::vector <int> enemyPaths;
         EnemyManager();
         virtual ~EnemyManager();
         void Update();

@@ -13,7 +13,7 @@ Enemy::Enemy(sf::Texture& texture)
     positionY = rand()%400 + 100;//sf::Window::getSize().x / 2;
     SetSprite(texture);
     health = 100;
-    movementSpeed = 0.1f;
+    movementSpeed = 0.05f;
     damage = 10;
     level = 1;
     sprite.setPosition(positionX, positionY);

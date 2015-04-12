@@ -1,0 +1,12 @@
+MarsColony.cbp
+MarsColony.depend
+MarsColony.layout
+obj/Debug/main.o
+obj/Debug/src/Building.o
+obj/Debug/src/Enemy.o
+obj/Debug/src/EnemyManager.o
+obj/Debug/src/GameManager.o
+obj/Debug/src/MapManager.o
+obj/Debug/src/MapObject.o
+obj/Debug/src/Mine.o
+obj/Debug/src/Tower.o

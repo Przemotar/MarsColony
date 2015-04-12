@@ -2,7 +2,8 @@
 
 Building::Building()
 {
-    //ctor
+    level = 1;
+    nextLevelCost = 10;
 }
 
 Building::~Building()

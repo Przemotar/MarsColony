@@ -6,6 +6,7 @@ class Building : public MapObject
 {
     public:
         Building();
+        Building(sf::Texture& texture);
         virtual ~Building();
         int LevelUp();
         virtual int Activate() = 0;

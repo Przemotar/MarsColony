@@ -6,6 +6,7 @@ class Tower : public Building
 {
     public:
         Tower();
+        Tower(sf::Texture & texture, float posX, float posY);
         virtual ~Tower();
         virtual int Activate();
     protected:

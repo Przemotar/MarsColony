@@ -4,6 +4,7 @@
 #include "EnemyManager.h"
 #include "GameManager.h"
 #include "MapManager.h"
+#include "BuildingManager.h"
 
 int main()
 {
@@ -16,6 +17,9 @@ int main()
     gameManager.Init();
     mapManager.Init();
 
+
+    BuildingManager buildingManager(window);
+    buildingManager.Init();
 
     int playerHp = 100;
 
@@ -38,6 +42,7 @@ int main()
 
         enemyManager.Update();
         gameManager.Update();
+        buildingManager.Update();
 
         if (enemyManager.isEnemyAtBase())
         {
@@ -49,6 +54,7 @@ int main()
 
         mapManager.DrawMap(window);
         enemyManager.DrawEnemies(window);
+        buildingManager.DrawBuildings(window);
 
         window.display();
     }

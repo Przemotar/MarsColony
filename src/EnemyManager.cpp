@@ -4,8 +4,8 @@
 
 EnemyManager::EnemyManager()
 {
-    spawnRate = 0.5f;
-    Enemy1Texture.loadFromFile("MarsWarm.jpg");
+    spawnRate = 1.0f;
+    Enemy1Texture.loadFromFile("MarsWarm.png");
 }
 
 EnemyManager::~EnemyManager()
@@ -15,12 +15,12 @@ EnemyManager::~EnemyManager()
 
 void EnemyManager::Init()
 {
-    enemyPaths.push_back(50);
-    enemyPaths.push_back(100);
-    enemyPaths.push_back(150);
-    enemyPaths.push_back(200);
-    enemyPaths.push_back(250);
-    enemyPaths.push_back(300);
+    enemyPaths.push_back(20);
+    enemyPaths.push_back(120);
+    enemyPaths.push_back(220);
+    enemyPaths.push_back(320);
+    enemyPaths.push_back(420);
+    enemyPaths.push_back(520);
 }
 
 void EnemyManager::Update()

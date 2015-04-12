@@ -8,12 +8,11 @@ class Building : public MapObject
         Building();
         Building(sf::Texture& texture);
         virtual ~Building();
-        int LevelUp();
+        virtual int LevelUp(int money);
         virtual int Activate() = 0;
         int UpdateLevelCost();
 
     protected:
-    private:
         int level;
         int nextLevelCost;
 };

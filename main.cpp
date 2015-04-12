@@ -27,12 +27,20 @@ int main()
 
     texture.loadFromFile("MarsWarm.png");
 
-
+    sf::Clock clock;
+    sf::Time timer;
 
     bool moveRight;
 
     while (window.isOpen())
     {
+        timer = clock.getElapsedTime();
+        if (timer.asSeconds() >= 1)
+        {
+            clock.restart();
+            gameManager.Gold += buildingManager.getIncome();
+        }
+
         sf::Event event;
         while (window.pollEvent(event))
         {

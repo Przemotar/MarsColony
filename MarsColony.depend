@@ -386,7 +386,7 @@
 1428835036 source:c:\users\student\desktop\compo\marscolony\repo\src\mapobject.cpp
 	"MapObject.h"
 
-1428846371 source:c:\users\student\desktop\najnopwskiedzialanaperwno\main.cpp
+1428852487 source:c:\users\student\desktop\najnopwskiedzialanaperwno\main.cpp
 	<iostream>
 	<SFML/Graphics.hpp>
 	"Enemy.h"
@@ -416,10 +416,10 @@
 	<vector>
 	"Enemy.h"
 
-1428843077 source:c:\users\student\desktop\najnopwskiedzialanaperwno\src\building.cpp
+1428850358 source:c:\users\student\desktop\najnopwskiedzialanaperwno\src\building.cpp
 	"Building.h"
 
-1428841256 c:\users\student\desktop\najnopwskiedzialanaperwno\include\building.h
+1428851089 c:\users\student\desktop\najnopwskiedzialanaperwno\include\building.h
 	"MapObject.h"
 
 1428843630 source:c:\users\student\desktop\najnopwskiedzialanaperwno\src\tower.cpp
@@ -428,30 +428,31 @@
 1428843516 c:\users\student\desktop\najnopwskiedzialanaperwno\include\tower.h
 	"Building.h"
 
-1428848525 source:c:\users\student\desktop\najnopwskiedzialanaperwno\src\mine.cpp
+1428850959 source:c:\users\student\desktop\najnopwskiedzialanaperwno\src\mine.cpp
 	"Mine.h"
 	<iostream>
 
-1428848616 c:\users\student\desktop\najnopwskiedzialanaperwno\include\mine.h
+1428851089 c:\users\student\desktop\najnopwskiedzialanaperwno\include\mine.h
 	"Building.h"
 
-1428848616 source:c:\users\student\desktop\najnopwskiedzialanaperwno\src\buildingmanager.cpp
+1428852584 source:c:\users\student\desktop\najnopwskiedzialanaperwno\src\buildingmanager.cpp
 	"BuildingManager.h"
+	<iostream>
 
-1428843671 c:\users\student\desktop\najnopwskiedzialanaperwno\include\buildingmanager.h
+1428850959 c:\users\student\desktop\najnopwskiedzialanaperwno\include\buildingmanager.h
 	"Building.h"
 	"Mine.h"
 	"Tower.h"
 	<vector>
 
-1428845404 c:\users\student\desktop\najnopwskiedzialanaperwno\include\gamemanager.h
+1428852129 c:\users\student\desktop\najnopwskiedzialanaperwno\include\gamemanager.h
 	<SFML/Graphics.hpp>
 
 1428846371 c:\users\student\desktop\najnopwskiedzialanaperwno\include\mapmanager.h
 	<vector>
 	<SFML/Graphics.hpp>
 
-1428845404 source:c:\users\student\desktop\najnopwskiedzialanaperwno\src\gamemanager.cpp
+1428852138 source:c:\users\student\desktop\najnopwskiedzialanaperwno\src\gamemanager.cpp
 	"GameManager.h"
 	<iostream>
 

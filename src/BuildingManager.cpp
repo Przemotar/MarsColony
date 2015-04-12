@@ -1,4 +1,5 @@
 #include "BuildingManager.h"
+#include <iostream>
 
 BuildingManager::BuildingManager(){}
 
@@ -64,4 +65,17 @@ void BuildingManager::DrawBuildings(sf::RenderWindow& window)
     {
         towers[i].DrawObject(window);
     }
+}
+
+int BuildingManager::getIncome()
+{
+    int income = 0;
+    for (int i=0; i<mines.size(); i++)
+    {
+       income += mines[i].getGold();
+    }
+
+    std::cout << "You earned " << income << " gold!\n";
+
+    return income;
 }

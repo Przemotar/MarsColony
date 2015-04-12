@@ -10,10 +10,12 @@ class Mine : public Building
         virtual ~Mine();
         virtual int Activate();
         void Deactivate();
+        virtual int LevelUp(int money);
 
         const int getCooldown() const {return cooldown;};
         const sf::Time getActivationTime() const {return activationTimer;};
         const bool isActivated() const {return activated;};
+        int getGold() {return goldPerSecond;};
 
     protected:
     private:

@@ -11,20 +11,17 @@ Building::~Building()
     //dtor
 }
 
-int Building::LevelUp()
+int Building::LevelUp(int money)
 {
-    int money = 10;//getMoney();
     if (money >= nextLevelCost)
     {
+        int newMoney = money - nextLevelCost;
         level++;
-        //setMoney(money - nextLevelCost);
         UpdateLevelCost();
         return level;
     }
-    else
-    {
-        return 0;
-    }
+
+    return 0;
 }
 
 int Building::UpdateLevelCost()

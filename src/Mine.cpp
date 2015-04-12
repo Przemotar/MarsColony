@@ -37,3 +37,9 @@ void Mine::Deactivate()
     activated = false;
     std::cout << "Mine deactivated!\n";
 }
+
+int Mine::LevelUp(int money)
+{
+    goldPerSecond += 20;
+    return level;
+}

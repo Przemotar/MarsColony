@@ -16,6 +16,8 @@ class BuildingManager
         sf::Texture Building1Texture;
         sf::Texture Building2Texture;
         void DrawBuildings(sf::RenderWindow& window);
+
+        int getIncome();
     protected:
     private:
         void Spawn();

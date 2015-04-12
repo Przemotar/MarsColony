@@ -65,6 +65,8 @@
 		<Unit filename="include/BuildingManager.h" />
 		<Unit filename="include/Enemy.h" />
 		<Unit filename="include/EnemyManager.h" />
+		<Unit filename="include/GameManager.h" />
+		<Unit filename="include/MapManager.h" />
 		<Unit filename="include/MapObject.h" />
 		<Unit filename="include/Mine.h" />
 		<Unit filename="include/Tower.h" />
@@ -73,6 +75,8 @@
 		<Unit filename="src/BuildingManager.cpp" />
 		<Unit filename="src/Enemy.cpp" />
 		<Unit filename="src/EnemyManager.cpp" />
+		<Unit filename="src/GameManager.cpp" />
+		<Unit filename="src/MapManager.cpp" />
 		<Unit filename="src/MapObject.cpp" />
 		<Unit filename="src/Mine.cpp" />
 		<Unit filename="src/Tower.cpp" />

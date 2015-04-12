@@ -386,18 +386,20 @@
 1428835036 source:c:\users\student\desktop\compo\marscolony\repo\src\mapobject.cpp
 	"MapObject.h"
 
-1428842737 source:c:\users\student\desktop\najnopwskiedzialanaperwno\main.cpp
+1428846371 source:c:\users\student\desktop\najnopwskiedzialanaperwno\main.cpp
 	<iostream>
 	<SFML/Graphics.hpp>
 	"Enemy.h"
 	"EnemyManager.h"
+	"GameManager.h"
+	"MapManager.h"
 	"BuildingManager.h"
 
-1428840517 source:c:\users\student\desktop\najnopwskiedzialanaperwno\src\enemy.cpp
+1428846371 source:c:\users\student\desktop\najnopwskiedzialanaperwno\src\enemy.cpp
 	"Enemy.h"
 	<iostream>
 
-1428840517 source:c:\users\student\desktop\najnopwskiedzialanaperwno\src\enemymanager.cpp
+1428846371 source:c:\users\student\desktop\najnopwskiedzialanaperwno\src\enemymanager.cpp
 	"EnemyManager.h"
 	<iostream>
 
@@ -410,7 +412,7 @@
 1428840517 c:\users\student\desktop\najnopwskiedzialanaperwno\include\mapobject.h
 	<SFML/Graphics.hpp>
 
-1428840517 c:\users\student\desktop\najnopwskiedzialanaperwno\include\enemymanager.h
+1428845404 c:\users\student\desktop\najnopwskiedzialanaperwno\include\enemymanager.h
 	<vector>
 	"Enemy.h"
 
@@ -426,13 +428,14 @@
 1428843516 c:\users\student\desktop\najnopwskiedzialanaperwno\include\tower.h
 	"Building.h"
 
-1428843078 source:c:\users\student\desktop\najnopwskiedzialanaperwno\src\mine.cpp
+1428848525 source:c:\users\student\desktop\najnopwskiedzialanaperwno\src\mine.cpp
 	"Mine.h"
+	<iostream>
 
-1428842402 c:\users\student\desktop\najnopwskiedzialanaperwno\include\mine.h
+1428848616 c:\users\student\desktop\najnopwskiedzialanaperwno\include\mine.h
 	"Building.h"
 
-1428843599 source:c:\users\student\desktop\najnopwskiedzialanaperwno\src\buildingmanager.cpp
+1428848616 source:c:\users\student\desktop\najnopwskiedzialanaperwno\src\buildingmanager.cpp
 	"BuildingManager.h"
 
 1428843671 c:\users\student\desktop\najnopwskiedzialanaperwno\include\buildingmanager.h
@@ -440,4 +443,18 @@
 	"Mine.h"
 	"Tower.h"
 	<vector>
+
+1428845404 c:\users\student\desktop\najnopwskiedzialanaperwno\include\gamemanager.h
+	<SFML/Graphics.hpp>
+
+1428846371 c:\users\student\desktop\najnopwskiedzialanaperwno\include\mapmanager.h
+	<vector>
+	<SFML/Graphics.hpp>
+
+1428845404 source:c:\users\student\desktop\najnopwskiedzialanaperwno\src\gamemanager.cpp
+	"GameManager.h"
+	<iostream>
+
+1428846371 source:c:\users\student\desktop\najnopwskiedzialanaperwno\src\mapmanager.cpp
+	"MapManager.h"
 

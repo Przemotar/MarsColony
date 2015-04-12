@@ -1,4 +1,5 @@
 #include "Mine.h"
+#include <iostream>
 
 Mine::Mine()
 {
@@ -13,6 +14,8 @@ Mine::Mine(sf::Texture& texture, float posX, float posY)
     sprite.setPosition(positionX, positionY);
     cooldown = 5;
     goldPerSecond = 10;
+    activated = false;
+    activationTimer = clock.getElapsedTime();                   //at the begginning players wont be able to activate towers; to be fixed
 }
 
 Mine::~Mine()
@@ -22,5 +25,15 @@ Mine::~Mine()
 
 int Mine::Activate()
 {
-    return 0;
+    goldPerSecond *= 2;
+    activationTimer = clock.getElapsedTime();
+    activated = true;
+    std::cout << "Mine activated!\n";
+}
+
+void Mine::Deactivate()
+{
+    goldPerSecond /= 2;
+    activated = false;
+    std::cout << "Mine deactivated!\n";
 }

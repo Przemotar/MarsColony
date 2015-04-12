@@ -9,10 +9,19 @@ class Mine : public Building
         Mine(sf::Texture & texture, float posX, float posY);
         virtual ~Mine();
         virtual int Activate();
+        void Deactivate();
+
+        const int getCooldown() const {return cooldown;};
+        const sf::Time getActivationTime() const {return activationTimer;};
+        const bool isActivated() const {return activated;};
+
     protected:
     private:
         int cooldown;
         int goldPerSecond;
+        sf::Time activationTimer;
+        sf::Clock clock;
+        bool activated;
 };
 
 #endif // MINE_H

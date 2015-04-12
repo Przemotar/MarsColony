@@ -386,41 +386,58 @@
 1428835036 source:c:\users\student\desktop\compo\marscolony\repo\src\mapobject.cpp
 	"MapObject.h"
 
-1428839001 source:c:\users\student\desktop\najnopwskiedzialanaperwno\main.cpp
+1428842737 source:c:\users\student\desktop\najnopwskiedzialanaperwno\main.cpp
 	<iostream>
 	<SFML/Graphics.hpp>
 	"Enemy.h"
+	"EnemyManager.h"
+	"BuildingManager.h"
 
-1428839001 source:c:\users\student\desktop\najnopwskiedzialanaperwno\src\enemy.cpp
+1428840517 source:c:\users\student\desktop\najnopwskiedzialanaperwno\src\enemy.cpp
 	"Enemy.h"
 	<iostream>
 
-1428839001 source:c:\users\student\desktop\najnopwskiedzialanaperwno\src\enemymanager.cpp
+1428840517 source:c:\users\student\desktop\najnopwskiedzialanaperwno\src\enemymanager.cpp
 	"EnemyManager.h"
 	<iostream>
 
 1428839001 source:c:\users\student\desktop\najnopwskiedzialanaperwno\src\mapobject.cpp
 	"MapObject.h"
 
-1428839001 c:\users\student\desktop\najnopwskiedzialanaperwno\include\enemy.h
+1428840517 c:\users\student\desktop\najnopwskiedzialanaperwno\include\enemy.h
 	"MapObject.h"
 
-1428839001 c:\users\student\desktop\najnopwskiedzialanaperwno\include\mapobject.h
+1428840517 c:\users\student\desktop\najnopwskiedzialanaperwno\include\mapobject.h
 	<SFML/Graphics.hpp>
 
-1428839001 c:\users\student\desktop\najnopwskiedzialanaperwno\include\enemymanager.h
+1428840517 c:\users\student\desktop\najnopwskiedzialanaperwno\include\enemymanager.h
 	<vector>
 	"Enemy.h"
 
-1428839245 source:c:\users\student\desktop\najnopwskiedzialanaperwno\src\building.cpp
+1428843077 source:c:\users\student\desktop\najnopwskiedzialanaperwno\src\building.cpp
 	"Building.h"
 
-1428839232 c:\users\student\desktop\najnopwskiedzialanaperwno\include\building.h
+1428841256 c:\users\student\desktop\najnopwskiedzialanaperwno\include\building.h
 	"MapObject.h"
 
-1428839295 source:c:\users\student\desktop\najnopwskiedzialanaperwno\src\tower.cpp
+1428843630 source:c:\users\student\desktop\najnopwskiedzialanaperwno\src\tower.cpp
 	"Tower.h"
 
-1428839282 c:\users\student\desktop\najnopwskiedzialanaperwno\include\tower.h
+1428843516 c:\users\student\desktop\najnopwskiedzialanaperwno\include\tower.h
 	"Building.h"
+
+1428843078 source:c:\users\student\desktop\najnopwskiedzialanaperwno\src\mine.cpp
+	"Mine.h"
+
+1428842402 c:\users\student\desktop\najnopwskiedzialanaperwno\include\mine.h
+	"Building.h"
+
+1428843599 source:c:\users\student\desktop\najnopwskiedzialanaperwno\src\buildingmanager.cpp
+	"BuildingManager.h"
+
+1428843671 c:\users\student\desktop\najnopwskiedzialanaperwno\include\buildingmanager.h
+	"Building.h"
+	"Mine.h"
+	"Tower.h"
+	<vector>
 

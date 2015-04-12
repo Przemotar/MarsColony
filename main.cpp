@@ -2,12 +2,16 @@
 #include <SFML/Graphics.hpp>
 #include "Enemy.h"
 #include "EnemyManager.h"
+#include "BuildingManager.h"
 
 int main()
 {
     sf::RenderWindow window(sf::VideoMode(800, 600), "SFML works!");
     EnemyManager enemyManager;
     enemyManager.Init();
+
+    BuildingManager buildingManager(window);
+    buildingManager.Init();
 
     int playerHp = 100;
 
@@ -26,6 +30,7 @@ int main()
         }
 
         enemyManager.Update();
+        buildingManager.Update();
 
         if (enemyManager.isEnemyAtBase())
         {
@@ -37,6 +42,7 @@ int main()
         window.clear();
 
         enemyManager.DrawEnemies(window);
+        buildingManager.DrawBuildings(window);
 
         window.display();
     }

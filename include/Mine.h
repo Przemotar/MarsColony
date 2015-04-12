@@ -6,6 +6,7 @@ class Mine : public Building
 {
     public:
         Mine();
+        Mine(sf::Texture & texture, float posX, float posY);
         virtual ~Mine();
         virtual int Activate();
     protected:

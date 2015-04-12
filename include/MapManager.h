@@ -13,6 +13,8 @@ class MapManager
     protected:
     private:
         sf::Texture enemyMapTexture;
+        sf::Texture defenseMapTexture;
+        sf::Texture economyMapTexture;
         std::vector <sf::Sprite> enemyMapSprites;
 };
 

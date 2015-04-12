@@ -17,7 +17,7 @@ Enemy::Enemy(sf::Texture& texture)
     damage = 10;
     level = 1;
     sprite.setPosition(positionX, positionY);
-    std::cout<<"Enemy created!"<<std::endl;
+    reachedBase = false;
 }
 
 Enemy::~Enemy()
@@ -41,10 +41,14 @@ void Enemy::TakeDamage(int amount)
 
 void Enemy::Die()
 {
-    //TODO
+
 }
 
 void Enemy::Move()
 {
     SetObjectPosition(positionX-movementSpeed, positionY);
+    if (positionX <= 300)
+    {
+        reachedBase = true;
+    }
 }

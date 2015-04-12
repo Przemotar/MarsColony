@@ -45,3 +45,37 @@ void EnemyManager::DrawEnemies(sf::RenderWindow& window)
         enemies[i].DrawObject(window);
     }
 }
+
+bool EnemyManager::isEnemyAtBase()
+{
+    for (int i=0; i<enemies.size(); i++)
+    {
+        if (enemies[i].reachedBase)
+        {
+            return true;
+        }
+    }
+    return false;
+}
+
+void EnemyManager::ClearEnemiesAtBase()
+{
+    for (int i=0; i<enemies.size(); i++)
+    {
+        if (enemies[i].reachedBase)
+        {
+
+        }
+    }
+}
+
+Enemy& EnemyManager::GetEnemyAtBase()
+{
+    for (int i=0; i<enemies.size(); i++)
+    {
+        if (enemies[i].reachedBase)
+        {
+            return enemies[i];
+        }
+    }
+}

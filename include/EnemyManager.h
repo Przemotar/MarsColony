@@ -14,6 +14,9 @@ class EnemyManager
         float spawnRate;
         sf::Texture Enemy1Texture;
         void DrawEnemies(sf::RenderWindow& window);
+        Enemy& GetEnemyAtBase();
+        bool isEnemyAtBase();
+        void ClearEnemiesAtBase();
     protected:
     private:
         void Spawn();

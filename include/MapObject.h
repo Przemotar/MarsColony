@@ -8,12 +8,14 @@ class MapObject
         MapObject();
         virtual ~MapObject();
         sf::Sprite GetSprite();
+        void DrawObject(sf::RenderWindow& windowToDraw);
+        void SetObjectPosition(float x, float y);
+        float positionX;
+        float positionY;
     protected:
-        int positionX;
-        int positionY;
         sf::Sprite sprite;
         sf::Texture texture;
-        void SetSprite(sf::Texture newTexture);
+        void SetSprite(sf::Texture& newTexture);
     private:
 };
 

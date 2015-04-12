@@ -1,17 +1,19 @@
 #include <iostream>
 #include <SFML/Graphics.hpp>
 #include "Enemy.h"
+#include "EnemyManager.h"
 
 int main()
 {
     sf::RenderWindow window(sf::VideoMode(800, 600), "SFML works!");
-    sf::CircleShape shape(100.f);
-    shape.setFillColor(sf::Color::Green);
+    EnemyManager enemyManager;
+    enemyManager.Init();
+
+    int playerHp = 100;
+
     sf::Texture texture;
     texture.loadFromFile("MarsWarm.jpg");
-    sf::Sprite spriteTest;
-    spriteTest.setTexture(texture);
-    Enemy enemy(texture);
+
     bool moveRight;
 
     while (window.isOpen())
@@ -23,29 +25,19 @@ int main()
                 window.close();
         }
 
-        if (sf::Keyboard::isKeyPressed(sf::Keyboard::Left))
+        enemyManager.Update();
+
+        if (enemyManager.isEnemyAtBase())
         {
-            shape.setFillColor(sf::Color::Red);
+            playerHp -= enemyManager.GetEnemyAtBase().DealDamageAmount();
+            std::cout<<"Player HP is: "<<playerHp<<std::endl;
+            enemyManager.ClearEnemiesAtBase();
         }
-        if (sf::Keyboard::isKeyPressed(sf::Keyboard::Right))
-        {
-            shape.setFillColor(sf::Color::Blue);
-        }
-
-        if (spriteTest.getPosition().x < 400 && !moveRight)
-            moveRight = true;
-        if (spriteTest.getPosition().x > 800 && moveRight)
-            moveRight = false;
-
-
-        if (moveRight)
-            spriteTest.setPosition(spriteTest.getPosition().x+0.1f, spriteTest.getPosition().y);
-        else
-            spriteTest.setPosition(spriteTest.getPosition().x-0.1f, spriteTest.getPosition().y);
 
         window.clear();
-        window.draw(enemy.GetSprite());
-        window.draw(spriteTest);
+
+        enemyManager.DrawEnemies(window);
+
         window.display();
     }
 

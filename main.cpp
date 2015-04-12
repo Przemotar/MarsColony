@@ -25,7 +25,7 @@ int main()
 
     sf::Texture texture;
 
-    texture.loadFromFile("MarsWarm.jpg");
+    texture.loadFromFile("MarsWarm.png");
 
 
 
